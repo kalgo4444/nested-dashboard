@@ -43,7 +43,7 @@ const MainSubjects = React.lazy(() =>
 );
 const AdditionalLessons = React.lazy(() =>
   import(
-    "./pages/Dashboard/pages/Timetable/Tabs/AdditionalLessons/AdditionalLessons"
+    "./pages/Dashboard/pages/Timetable/Tabs/Additionallessons/AdditionalLessons"
   )
 );
 
