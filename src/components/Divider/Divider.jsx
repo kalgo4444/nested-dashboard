@@ -8,8 +8,8 @@ import Typography from "@mui/material/Typography";
 export default function IntroDivider({ paymentdata }) {
   return (
     <div className="grid grid-cols-5 gap-5">
-      {paymentdata?.map((item) => (
-        <Card variant="outlined" sx={{ maxWidth: 360 }}>
+      {paymentdata?.map((item, i) => (
+        <Card key={i} variant="outlined" sx={{ maxWidth: 360 }}>
           <Box sx={{ p: 2 }}>
             <Stack
               direction="row"
