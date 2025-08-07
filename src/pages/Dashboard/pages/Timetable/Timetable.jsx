@@ -1,6 +1,7 @@
 import React from "react";
 import Tabs from "../../../../components/Tabs/Tabs";
 import { Outlet } from "react-router-dom";
+
 const TABS_LINKS = [
   {
     id: 1,

@@ -3,22 +3,53 @@ const TableData = React.lazy(() =>
   import("../../../../../../components/Table/TableData")
 );
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const lessons = [
-  createData("Matematika", 48, "Aliyev", 30, 5),
-  createData("Fizika", 42, "Karimova", 28, 4),
-  createData("Ingliz tili", 36, "Smith", 25, 3),
-  createData("Kimyo", 40, "Rahmonov", 27, 4),
-  createData("Biologiya", 38, "Nazarova", 26, 3),
+const tabledata = [
+  {
+    id: 1,
+    name: "Matematika",
+    calories: 48,
+    fat: "Aliyev",
+    carbs: 30,
+    protein: 5,
+  },
+  {
+    id: 2,
+    name: "Fizika",
+    calories: 30,
+    fat: "Valiyev",
+    carbs: 20,
+    protein: 3,
+  },
+  {
+    id: 3,
+    name: "Kimyo",
+    calories: 25,
+    fat: "Saidov",
+    carbs: 15,
+    protein: 4,
+  },
+  {
+    id: 4,
+    name: "Biologiya",
+    calories: 20,
+    fat: "Xolmatov",
+    carbs: 10,
+    protein: 2,
+  },
+  {
+    id: 5,
+    name: "Ingliz tili",
+    calories: 15,
+    fat: "Rahimov",
+    carbs: 5,
+    protein: 1,
+  },
 ];
 
 const MainSubjects = () => {
   return (
     <div>
-      <TableData tabledata={lessons} />
+      <TableData tabledata={tabledata} />
     </div>
   );
 };
