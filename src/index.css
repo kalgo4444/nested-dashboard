@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.nav_active {
+  padding: 10px 0;
+}
+.nav_active.active {
+  background-color: #e6f4ff;
+  font-weight: 700;
+  color: #6688ff;
+  padding: 10px 0 10px 15px;
+  transform: scale(1.02);
+  border-left: 5px solid #6688ff;
+}
+.tabs__link.active {
+  background-color: #e6f4ff;
+  color: #6688ff;
+}
