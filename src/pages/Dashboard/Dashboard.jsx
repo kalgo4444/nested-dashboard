@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className="flex">
       {/* sidebar */}
-      <aside className="max-w-xs w-full min-h-screen sticky top-0 left-0 flex flex-col bg-white border-r border-neutral-300 px-3 py-2">
+      <aside className="max-w-xs w-full h-screen sticky top-0 left-0 flex flex-col bg-white border-r border-neutral-300 px-3 py-2">
         <div className="block mx-auto py-3">
           <Logo link={"/dashboard"} />
         </div>
@@ -22,7 +22,7 @@ const Dashboard = () => {
         </div>
       </aside>
       {/* content */}
-      <div className="flex-1 relative">
+      <div className="flex-1 relative overflow-y-scroll">
         <Navbar />
         {/* dashboard body */}
         <div className="bg-neutral-100 w-full h-full p-5">
